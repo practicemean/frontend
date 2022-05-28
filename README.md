@@ -1,6 +1,6 @@
 # Healthy
 
-This project drive notifications and the api fo whatsapp
+This project drive notifications and send messages to api of whatsapp
 
 # Technology 
 ## mean 
@@ -12,6 +12,6 @@ I use angular for generate
  The design was made with figma
 
 ![Screenshot](readme/entrada.png)
-![Screenshot](documentation/dashboard.png)
-![Screenshot](documentation/crud.png)
+![Screenshot](readme/dashboard.png)
+![Screenshot](readme/crud.png)
  

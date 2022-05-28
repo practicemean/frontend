@@ -10,12 +10,15 @@ I use angular for generate
 # Design 
 
  The design was made with figma
- <p>landing page</p>
+ landing page
+ <br>
 ![Screenshot](readme/entrada.png)
 <br>
-<p>Dashboard</p>
+Dashboard
+<br>
 ![Screenshot](readme/dashboard.png)
 <br>
-<p>crud</p>
+crud
+<br>
 ![Screenshot](readme/crud.png)
  

@@ -3,22 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './modules/home/components/home/home.component';
-import { LoginComponent } from './modules/auth/login/login.component';
-import { RegisterComponent } from './modules/auth/register/register.component';
+import { HomeComponent } from './modules/dashboard/components/dashboard/home.component';
+import { LoginComponent } from './landingpage/components/login/login.component';
 import { CreateDietComponent } from './modules/diet/components/create-diet/create-diet.component';
 import { ListDietComponent } from './modules/diet/components/list-diet/list-diet.component';
 import { MenuComponent } from './modules/core/pages/menu/menu.component';
+import { LadingpageComponent } from './landingpage/page/ladingpage.component';
+import { HelpComponent } from './landingpage/components/help/help.component';
+import { FoodDietsComponent } from './landingpage/components/food-diets/food-diets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent,
     CreateDietComponent,
     ListDietComponent,
-    MenuComponent
+    MenuComponent,
+    LadingpageComponent,
+    HelpComponent,
+    FoodDietsComponent
   ],
   imports: [
     BrowserModule,

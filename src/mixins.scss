@@ -1,0 +1,5 @@
+@mixin wh ($w, $h) {
+    width: $w + em;
+    height: $h + em;
+}
+

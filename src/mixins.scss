@@ -1,5 +1,16 @@
-@mixin wh ($w, $h) {
-    width: $w + em;
-    height: $h + em;
+
+// for width and height 
+@mixin maxwh ($w, $h) {
+    max-width: $w + vh;
+    max-height: $h + em;
 }
 
+@mixin minwh($w, $h)  {
+    min-width: $w + em;
+    min-height: $h + em;   
+}
+
+@mixin linea(){
+
+    
+}

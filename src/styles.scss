@@ -1,14 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import './mixins.scss';
+
 @import './colors.scss';
 
-*{
-    border: 0px;
-    margin: 0px;
-}
-body{
 
+body{
+    margin: 0px;
     background: $primary-color;
     filter: sepia(40%);
     background-blend-mode: darken;
@@ -16,7 +13,6 @@ body{
     background-size: cover;
     max-width: 100vw;   
     min-height: 100vh;
-
 }
 
 

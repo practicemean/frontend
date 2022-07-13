@@ -5,60 +5,131 @@ header{
     
     background: $header-background;
     color: $primary-color;
-    @include maxwh(100, 20);
-    position: fixed;
+    width: 100%;
+    height: 3.5em;
+    margin: 0px;
     overflow: hidden;
+    
+
     a{
         list-style: none;
         text-decoration: none;
         color: $primary-color;
-    
-        
+        font-size: larger;
+          padding: 0.3em;        
     }
-    .burger-wrapper {
-        cursor: pointer;
-      }
+
+
+    nav{
+        
+         display: flex;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+
+       .logo{
+        position: relative;
+        height: 100%;
+        top: 1.5em;
+       }
+       .content{
+        display: flex;
+        position: relative;
+        top: 1.5em;
+        left: 2em;
+        .dropdown{
+  
+
+            width: 10em;
+            .dropdown-content{
+                background-color: $header-background;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 0.7em;
+                border-radius: 0.2em;
+                
+                
+                
+            }
+        }
+       }
+    }
+ 
+    // menu 
+
+    
+
+    
+
+
+    // menu burger 
+   .mv{
+    
       #meny {
           background: $header-background;
-          width: 50rem;
-          height: 100vh;
+          margin: 0px;
+          width: 20em;
+          height: 90vh;
           position: fixed;
           right: 0;
-          transition-timing-function: cubic-bezier(10,2,3,1);
-          transform: translateX(50rem);
-          top: 0;
-          z-index: 0;
+          top: 0px;
           transition: 0.5s;
+          border-radius: 0.5em;
+          overflow: hidden;
+          display:  none; 
+          
+    
+          @include keyframes(fade){
+            0%{
+            width: 0px;
+            opacity: 0.9; 
+            }
+           50%{
+            opacity: 0.96;
+            width: 10em;   
+        }
+           100%{
+            opacity: 1;
+            width: 20em
+           }
+          }
+        @include animate(fade, 0.5s, linear, 1);
+       
+
       }
       #menyAvPaa {
+          width:  20px;
+          height: 20px;
+          overflow: hidden;
           display: none;
       }
       
       #menyAvPaa:checked ~ #meny {
-          transform: translateX(0rem);
+          display: block;
       }
       
       #burger {
           position: absolute;
-          cursor: pointer;
           width: 2rem;
           height: 2rem;
           right: 1rem;
-          top: 1rem;
+          top: 0.7em;
           display: flex;
           justify-content: space-between;
           flex-direction: column;
       }
       
       #burger > div {
-          height: 2px;
+          height: 3px;
           background-color: $bottoms-color-app;
           transition: 0.5s;
-          z-index: 999;
+          z-index: 1;
       }
       
       #menyAvPaa:checked ~ #burger > div {
-        background-color: #fff;
+        background-color: $primary-color;
       }
       
       #menyAvPaa:checked ~ #burger > div:nth-child(1) {
@@ -70,7 +141,7 @@ header{
       #menyAvPaa:checked ~ #burger > div:nth-child(3) {
           transform: translateY(-15px) rotate(-45deg);
       }
-
+    }
 }
 
 

@@ -9,8 +9,26 @@
     min-width: $w + em;
     min-height: $h + em;   
 }
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
 
-@mixin linea(){
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
 
+
+/* responsive desing */
+
+@mixin mv($media: 480px ){
+
+    @media screen and(max-width: $media){
+        @content; 
     
 }
+}
+
+
+

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/dashboard/components/dashboard/home.component';
 import { LoginComponent } from './landingpage/components/login/login.component';
@@ -26,7 +29,8 @@ import { FoodDietsComponent } from './landingpage/components/food-diets/food-die
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
